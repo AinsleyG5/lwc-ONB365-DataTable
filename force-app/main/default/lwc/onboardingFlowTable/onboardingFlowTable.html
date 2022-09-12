@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <template if:true={records}>
+        <div class="slds-box design">
+            <lightning-datatable
+                hide-checkbox-column="true"
+                data={records}
+                columns={columns}
+                key-field="Name">
+            </lightning-datatable>
+        </div>
+    </template>
+</template>
